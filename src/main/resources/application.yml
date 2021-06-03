@@ -35,6 +35,9 @@ eureka:
   instance:
     hostname: localhost
   client:
+    # 指定是否注册到 Eureka
+    # 由于是服务器不能注册到自己
+    # 因此为 false
     registerWithEureka: false
     fetchRegistry: false
     service-url:
