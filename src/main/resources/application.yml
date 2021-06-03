@@ -5,7 +5,7 @@ spring:
 
 logging:
   level:
-    root: info
+    root: error
   file:
     path: service-register-center-log
   pattern:
@@ -15,7 +15,7 @@ server:
     port: 10097
     undertow:
       accesslog:
-        enabled: true
+        enabled: false
         dir: undertow-access-logs
         pattern: common
         rotate: true
