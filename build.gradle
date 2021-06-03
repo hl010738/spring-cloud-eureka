@@ -1,15 +1,3 @@
-buildscript {
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        classpath (
-                "org.springframework.boot:spring-boot-gradle-plugin:2.2.5.RELEASE",
-                "io.spring.gradle:dependency-management-plugin:1.0.6.RELEASE"
-        )
-    }
-}
 
 plugins {
     id 'org.springframework.boot' version '2.5.0'
@@ -19,17 +7,6 @@ plugins {
 
 apply plugin: 'io.spring.dependency-management'
 
-group 'com.springboot'
-version '1.0'
-
-dependencyManagement {
-    imports {
-        mavenBom "org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR8"
-    }
-    imports {
-        mavenBom "org.springframework.cloud:spring-cloud-netflix:2.2.2.RELEASE"
-    }
-}
 
 repositories {
     mavenCentral()
@@ -37,8 +14,8 @@ repositories {
 
 dependencies {
     implementation (
-            "org.springframework.boot:spring-boot-starter-web:2.2.13.RELEASE",
-            "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server",
+            "org.springframework.boot:spring-boot-starter-web",
+            "org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:3.0.3",
             "org.springframework.boot:spring-boot-starter-actuator",
             "org.jetbrains.kotlin:kotlin-stdlib-jdk8",
             "org.springframework.boot:spring-boot-starter-undertow"
@@ -47,10 +24,6 @@ dependencies {
     configurations {
         all*.exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
     }
-}
-
-tasks.withType(JavaCompile) {
-    options.encoding = "UTF-8"
 }
 
 
