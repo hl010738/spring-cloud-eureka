@@ -1,0 +1,47 @@
+2021-06-03 19:28:19.915  INFO 21028 --- [main] c.s.e.server.EurekaServerApplicationKt   : No active profile set, falling back to default profiles: default
+2021-06-03 19:28:20.802  WARN 21028 --- [main] o.s.boot.actuate.endpoint.EndpointId     : Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2021-06-03 19:28:20.933  INFO 21028 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=306dce08-4cd1-332c-97b3-b91f0a25d023
+2021-06-03 19:28:21.519  INFO 21028 --- [main] org.xnio                                 : XNIO version 3.3.8.Final
+2021-06-03 19:28:21.550  INFO 21028 --- [main] org.xnio.nio                             : XNIO NIO Implementation Version 3.3.8.Final
+2021-06-03 19:28:21.635  WARN 21028 --- [main] io.undertow.websockets.jsr               : UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+2021-06-03 19:28:21.682  INFO 21028 --- [main] io.undertow.servlet                      : Initializing Spring embedded WebApplicationContext
+2021-06-03 19:28:21.682  INFO 21028 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1751 ms
+2021-06-03 19:28:21.804  WARN 21028 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-06-03 19:28:21.804  INFO 21028 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-03 19:28:21.820  INFO 21028 --- [main] c.netflix.config.DynamicPropertyFactory  : DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2ee39e73
+2021-06-03 19:28:24.157  WARN 21028 --- [main] c.n.c.sources.URLConfigurationSource     : No URLs will be polled as dynamic configuration sources.
+2021-06-03 19:28:24.157  INFO 21028 --- [main] c.n.c.sources.URLConfigurationSource     : To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2021-06-03 19:28:24.326  INFO 21028 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-06-03 19:28:25.714  INFO 21028 --- [main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses Jersey
+2021-06-03 19:28:25.740  WARN 21028 --- [main] ockingLoadBalancerClientRibbonWarnLogger : You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2021-06-03 19:28:25.914  INFO 21028 --- [main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2021-06-03 19:28:25.945  INFO 21028 --- [main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2021-06-03 19:28:25.945  INFO 21028 --- [main] com.netflix.discovery.DiscoveryClient    : Client configured to neither register nor query for data.
+2021-06-03 19:28:25.961  INFO 21028 --- [main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1622719705961 with initial instances count: 0
+2021-06-03 19:28:26.014  INFO 21028 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initializing ...
+2021-06-03 19:28:26.014  WARN 21028 --- [main] c.n.eureka.cluster.PeerEurekaNodes       : The replica size seems to be empty. Check the route 53 DNS Registry
+2021-06-03 19:28:26.077  INFO 21028 --- [main] c.n.e.registry.AbstractInstanceRegistry  : Finished initializing remote region registries. All known remote regions: []
+2021-06-03 19:28:26.077  INFO 21028 --- [main] c.n.eureka.DefaultEurekaServerContext    : Initialized
+2021-06-03 19:28:26.093  INFO 21028 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 19 endpoint(s) beneath base path '/actuator'
+2021-06-03 19:28:26.193  INFO 21028 --- [main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application SERVICE-REGISTER-CENTER with eureka with status UP
+2021-06-03 19:28:26.193  INFO 21028 --- [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Setting the eureka configuration..
+2021-06-03 19:28:26.208  INFO 21028 --- [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka data center value eureka.datacenter is not set, defaulting to default
+2021-06-03 19:28:26.208  INFO 21028 --- [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Eureka environment value eureka.environment is not set, defaulting to test
+2021-06-03 19:28:26.215  INFO 21028 --- [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : isAws returned false
+2021-06-03 19:28:26.215  INFO 21028 --- [Thread-10] o.s.c.n.e.server.EurekaServerBootstrap   : Initialized server context
+2021-06-03 19:28:26.215  INFO 21028 --- [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Got 1 instances from neighboring DS node
+2021-06-03 19:28:26.215  INFO 21028 --- [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Renew threshold is: 1
+2021-06-03 19:28:26.215  INFO 21028 --- [Thread-10] c.n.e.r.PeerAwareInstanceRegistryImpl    : Changing status to UP
+2021-06-03 19:28:26.231  INFO 21028 --- [Thread-10] e.s.EurekaServerInitializerConfiguration : Started Eureka Server
+2021-06-03 19:28:26.293  INFO 21028 --- [main] c.s.j.s.i.a.WebApplicationImpl           : Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2021-06-03 19:28:26.378  INFO 21028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON encoding codec LegacyJacksonJson
+2021-06-03 19:28:26.378  INFO 21028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using JSON decoding codec LegacyJacksonJson
+2021-06-03 19:28:26.378  INFO 21028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML encoding codec XStreamXml
+2021-06-03 19:28:26.378  INFO 21028 --- [main] c.n.d.provider.DiscoveryJerseyProvider   : Using XML decoding codec XStreamXml
+2021-06-03 19:28:26.780  INFO 21028 --- [main] io.undertow                              : starting server: Undertow - 2.0.29.Final
+2021-06-03 19:28:26.832  INFO 21028 --- [main] o.s.b.w.e.u.UndertowServletWebServer     : Undertow started on port(s) 10097 (http) with context path ''
+2021-06-03 19:28:26.832  INFO 21028 --- [main] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 10097
+2021-06-03 19:28:28.101  INFO 21028 --- [main] c.s.e.server.EurekaServerApplicationKt   : Started EurekaServerApplicationKt in 11.675 seconds (JVM running for 18.335)
+2021-06-03 19:28:29.238  INFO 21028 --- [RMI TCP Connection(3)-192.168.153.1] io.undertow.servlet                      : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-06-03 19:28:29.238  INFO 21028 --- [RMI TCP Connection(3)-192.168.153.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-06-03 19:28:29.238  INFO 21028 --- [RMI TCP Connection(3)-192.168.153.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
