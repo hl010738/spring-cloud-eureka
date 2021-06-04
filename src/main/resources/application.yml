@@ -28,6 +28,6 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     service-url:
-      defaultZone: http://node3:10099/eureka/, http://node2:10098/eureka/
+      defaultZone: http://node1:10097/eureka/
       # 集群其他服务器地址
       # defaultZone: http://node1:10097/eureka/, http://node3:10099/eureka/
