@@ -18,7 +18,6 @@ management:
 eureka:
   instance:
     hostname: node1
-    prefer-ip-address: false
   client:
     # 指定是否注册到 Eureka
     # 由于是服务器不能注册到自己
