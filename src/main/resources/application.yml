@@ -17,7 +17,9 @@ management:
 
 eureka:
   instance:
-    hostname: node1
+    instance-id: service-register-center
+    appname: ${spring.application.name}
+    #prefer-ip-address: true
   client:
     # 指定是否注册到 Eureka
     # 由于是服务器不能注册到自己
@@ -27,6 +29,6 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     service-url:
-      defaultZone: http://node1:10097/eureka/
+      defaultZone: http://localhost:10097/eureka/
       # 集群其他服务器地址
       # defaultZone: http://node1:10097/eureka/, http://node3:10099/eureka/
